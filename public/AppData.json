@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/4wQ7hCmg/demo-app-2.webp",
+    "title": "Forest: Focus for Productivity",
+    "companyName": "SeekrTech",
+    "description": [
+      "Forest turns focus into a visually rewarding experience by letting users grow virtual trees for each focused session. Every time you start a timer, a tree begins to grow, encouraging you to stay on task and avoid distractions. Over time, users can cultivate entire virtual forests, reflecting consistent productivity habits. Optional ambient sounds such as rain or soft instrumentals create a distraction-free atmosphere for deeper concentration.",
+      "The app allows full customization of focus intervals and break periods, making it suitable for students, professionals, and creatives. Gentle notifications remind you when sessions start or end, while analytics and streak tracking provide insight into how time is spent. Users can review detailed statistics to understand productivity trends, adjust workflows, and optimize routines. Daily, weekly, and monthly summaries help maintain long-term consistency and progress toward goals.",
+      "Forest also incorporates gamified elements such as achievements and challenges, making focus engaging rather than tedious. Social features allow users to compete with friends or collaborate on growth challenges, enhancing accountability. By blending mindfulness, gamification, structured time management, and optional ambient sounds, Forest creates an immersive, motivating environment that helps users cultivate long-term focus habits, stay productive, and maintain a balanced, healthy routine."
+    ],
+    "size": 55,
+    "reviews": 50000,
+    "ratingAvg": 4.6,
+    "downloads": "9.1M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 42700 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/j9s1NPvt/teddy-bear.webp",
+    "title": "SmPlan: ToDo List with Reminder",
+    "companyName": "Taskify Inc.",
+    "description": [
+      "SmPlan provides a comprehensive to-do list experience, helping users organize daily tasks with reminders and deadlines. Users can create categories, assign priorities, and track progress for each task. The intuitive interface ensures even complex schedules are easy to manage, making planning seamless for students, professionals, and busy individuals.",
+      "Customizable notifications ensure tasks are not missed while offering flexibility for changing priorities. Visual progress trackers and completion streaks help users stay motivated. Analytics provide insight into task completion trends and productivity patterns, allowing adjustments to daily routines for maximum efficiency.",
+      "Gamified achievements and milestone tracking make SmPlan engaging, encouraging consistency in managing responsibilities. By combining structure, reminders, analytics, and motivational tools, SmPlan transforms task management from a mundane chore into an organized, rewarding, and productive experience."
+    ],
+    "size": 45,
+    "reviews": 22000,
+    "ratingAvg": 4.5,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 15300 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/4w71fLqm/postcard.webp",
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "FocusWorks",
+    "description": [
+      "FLIP is designed to enhance study sessions using a flexible focus timer. Users can set custom durations for work and break periods, helping maintain concentration without feeling overwhelmed. The app tracks completed sessions, providing visual summaries to monitor productivity and establish consistent study habits.",
+      "Optional ambient sounds and gentle notifications create a focused environment, minimizing distractions. Detailed analytics allow users to evaluate their performance, identify productivity trends, and adjust their routines for better outcomes. Streak tracking encourages sustained focus and daily commitment.",
+      "Gamified achievements make studying engaging and motivating. By blending focus tracking, customizable timers, and progress insights, FLIP transforms study sessions into structured, efficient, and rewarding experiences suitable for students, professionals, and lifelong learners."
+    ],
+    "size": 50,
+    "reviews": 18000,
+    "ratingAvg": 4.4,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 10200 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/8n40F0XD/demo-taddy.webp",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "CuteTime Studio",
+    "description": [
+      "Pomocat offers a charming Pomodoro timer with playful animations to make focus sessions enjoyable. Users can set custom work and break intervals, track completed sessions, and visualize progress with cute, engaging graphics that enhance motivation.",
+      "The app provides optional ambient sounds, reminders, and detailed analytics to monitor focus habits and productivity trends. Streak tracking and gamified achievements encourage consistent daily use and long-term habit formation.",
+      "By combining Pomodoro methodology, visual engagement, and motivational features, Pomocat transforms time management into a fun, interactive, and productive experience suitable for students, remote workers, and creatives seeking focus and consistency."
+    ],
+    "size": 40,
+    "reviews": 15000,
+    "ratingAvg": 4.5,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 8200 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/99HBP0Zp/time-planner.webp",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "PlanMaster",
+    "description": [
+      "Time Planner is designed for efficient daily planning and task management. Users can schedule tasks, set priorities, and track progress, ensuring that deadlines are met and productivity is optimized throughout the day.",
+      "Custom notifications, visual progress tracking, and analytics help users monitor task completion patterns and adjust schedules for better efficiency. Streak tracking and motivational insights encourage consistency in planning.",
+      "By combining task organization, analytics, reminders, and gamified achievements, Time Planner enables users to manage their day effectively, reduce stress, and accomplish goals while maintaining a balanced and productive routine."
+    ],
+    "size": 60,
+    "reviews": 21000,
+    "ratingAvg": 4.6,
+    "downloads": "8.5M",
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 12000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/v6jrrRwt/demo-planner.webp",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habitify",
+    "description": [
+      "Morning Habits helps users start the day productively by establishing structured routines. Each activity, from exercise to meditation, can be scheduled with reminders and tracked for consistency, promoting healthy morning habits. Users can visualize progress over time, motivating them to maintain momentum and improve overall productivity.",
+      "The app provides optional ambient sounds, customizable notifications, and analytics to monitor streaks and completion trends. Insights into consistency allow users to optimize routines, ensuring that the most important tasks are completed and distractions minimized. Gentle reminders guide users smoothly through each morning activity.",
+      "By combining habit tracking, motivational reminders, and structured routines, Morning Habits supports users in creating energizing morning rituals. It promotes long-term productivity, fosters discipline, and helps maintain mental and physical well-being by transforming ordinary mornings into intentional, productive, and fulfilling experiences."
+    ],
+    "size": 42,
+    "reviews": 17500,
+    "ratingAvg": 4.4,
+    "downloads": "7.5M",
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 330 },
+      { "name": "3 star", "count": 750 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 8600 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/DDXwnW0k/palmar-forest.webp",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "GreenFocus",
+    "description": [
+      "Focus Plant gamifies the Pomodoro technique with a forest theme. Every completed focus session grows a virtual tree, creating a visual representation of productivity and motivating consistent work habits. Users can cultivate an entire forest over time, reflecting long-term focus achievements.",
+      "Custom timers, ambient sounds, and notifications help maintain concentration during work periods while providing gentle reminders for breaks. Analytics track completed sessions, reveal productivity trends, and encourage routine adjustments for optimal results. Streaks and achievements incentivize continued engagement.",
+      "By blending gamification, structured focus sessions, and detailed tracking, Focus Plant makes productivity rewarding and enjoyable. Ideal for students, remote workers, or anyone seeking motivation, it encourages sustained focus while combining fun, mindfulness, and effective time management strategies."
+    ],
+    "size": 55,
+    "reviews": 14000,
+    "ratingAvg": 4.5,
+    "downloads": "6.8M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 290 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 8400 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/k62v56KL/alarm.png",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Alarmy Inc.",
+    "description": [
+      "Alarmy is a smart alarm clock designed to wake users effectively and track sleep patterns. Users can customize tasks to dismiss alarms, ensuring alertness and promoting healthy morning routines. Sleep tracking helps identify patterns and optimize sleep quality over time.",
+      "Optional ambient sounds, analytics, and notifications help create a calm and consistent waking environment. Users receive insights on sleep duration, quality, and trends, allowing them to make adjustments for better rest and improved daily productivity. Gentle reminders maintain consistent sleep schedules.",
+      "By combining alarm management, sleep tracking, and motivational insights, Alarmy helps users start the day energized and maintain healthy sleep habits. It promotes overall well-being, focus, and productivity by ensuring a structured and restorative sleep routine."
+    ],
+    "size": 48,
+    "reviews": 19000,
+    "ratingAvg": 4.6,
+    "downloads": "9.2M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 4600 },
+      { "name": "5 star", "count": 9200 }
+    ]
+  }
+]
