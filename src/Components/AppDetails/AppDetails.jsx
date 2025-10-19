@@ -1,27 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DownloadImg from '../../assets/icon-downloads.png';
 import RatingImg from '../../assets/icon-ratings.png';
 import ReviewImg from '../../assets/icon-review.png';
-import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { useLoaderData, useParams } from 'react-router';
+import { addToLC } from '../../Utility/LocalStorage';
 
 const AppDetails = () => {
+
+    const [installedApp, setInstalledApp] = useState(false);
+
+
+
     const param = useParams()
-    const id = parseInt(param.id);
+    const appId = parseInt(param.id);
     const allData = useLoaderData();
 
-    const datas = allData.find(clickedApp => clickedApp.id === id);
-    console.log(datas);
-    const { image, title, companyName, downloads, ratingAvg, reviews, size, description, ratings } = datas;
+    const datas = allData.find(clickedApp => clickedApp.id === appId);
+    // console.log(datas);
+    const { id, image, title, companyName, downloads, ratingAvg, reviews, size, description, ratings } = datas;
+    // console.log(id);
 
-
-    // const data = [
-    //     { "name": "1 star", "count": 350 },
-    //     { "name": "2 star", "count": 420 },
-    //     { "name": "3 star", "count": 900 },
-    //     { "name": "4 star", "count": 5400 },
-    //     { "name": "5 star", "count": 18930 }
-    // ]
+    const handleInstallBtn = (id) => {
+        addToLC(id)
+        setInstalledApp(true);
+        
+    }
 
 
     return (
@@ -52,19 +56,23 @@ const AppDetails = () => {
                             </div>
 
                         </div>
-                        <button className="btn btn-active btn-success text-white font-medium text-lg mt-4">Install Now ({size}MB)</button>
+                        <button onClick={() => handleInstallBtn(id)} disabled={installedApp} className={`btn btn-active ${installedApp ? "bg-green-300" : "btn-success"} text-white font-medium text-lg mt-4`}>{installedApp ? "Installed" : `Install Now (${size}MB)`}</button>
                     </div>
 
                 </div>
             </div>
             <div className='my-12'>
                 <h2>Ratings</h2>
-                <BarChart width={800} height={600} data={ratings} barCategoryGap={"20%"} >
-                    <Bar dataKey="count" fill="#FF8811" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip></Tooltip>
-                </BarChart>
+                <div className='max-w-6xl mx-auto h-[60vh]'>
+                    <ResponsiveContainer width="100%" height={"100%"} >
+                        <BarChart data={ratings} barCategoryGap={"20%"} >
+                            <Bar dataKey="count" fill="#FF8811" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip></Tooltip>
+                        </BarChart>
+                    </ResponsiveContainer>
+                </div>
             </div>
             <div>
                 <h2 className='text-2xl font-semibold'>Description</h2>
