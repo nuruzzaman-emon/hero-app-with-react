@@ -35,8 +35,8 @@ const Apps = () => {
                     <p className='text-lg text-gray-400 my-4'>Explore All Apps on the Market developed by us. We code for Millions</p>
                 </div>
                 <div>
-                    <div className='flex justify-between items-center p-5'>
-                        <h2 className='text-2xl font-semibold'>({searchItem.length}) Apps Found</h2>
+                    <div className='flex justify-between items-center md:p-5'>
+                        <h2 className='md:text-2xl font-semibold'>({searchItem.length}) Apps Found</h2>
                         <label className="input">
                             <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <g

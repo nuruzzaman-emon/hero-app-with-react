@@ -6,12 +6,12 @@ import { CiYoutube } from 'react-icons/ci';
 
 const Footer = () => {
     return (
-        <div className=' bg-[#001931] text-white font-semibold md:py-16 md:px-82 '>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center space-y-5 '>
+        <div className=' bg-[#001931] text-white font-semibold py-16 px-20 lg:px-82 '>
+            <div className='grid grid-cols-2 lg:grid-cols-4 space-y-5 '>
                 <div>
                     <h2 className='text-xl font-medium flex items-center gap-4'>
                         <img className='w-5 h-5' src={logoImg} alt="loading" />
-                        <span>APP STORE</span>
+                        <span>APP Media</span>
                     </h2>
                 </div>
                 <div>

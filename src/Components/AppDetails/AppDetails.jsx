@@ -30,8 +30,8 @@ const AppDetails = () => {
 
     return (
         <div className='w-10/12 mx-auto my-7'>
-            <div className='flex items-center gap-32 border-b-1 border-gray-300 pb-7'>
-                <img className='rounded-lg w-[400px] h-[400px]' src={image} alt="" />
+            <div className='flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-32 border-b-1 border-gray-300 pb-7'>
+                <img className='rounded-lg max-w-[400px] max-h-[400px]' src={image} alt="" />
                 <div className=''>
                     <div className='border-b-1 border-gray-200 pb-3 mb-3'>
                         <h2 className='text-4xl font-semibold'>{title}</h2>
@@ -42,17 +42,17 @@ const AppDetails = () => {
                             <div>
                                 <span><img className='mb-2' src={DownloadImg} alt="" /></span>
                                 <p>Downloads</p>
-                                <p className='text-[40px] font-extrabold'>{downloads}</p>
+                                <p className='md:text-3xl lg:text-[40px] font-extrabold'>{downloads}</p>
                             </div>
                             <div>
                                 <span><img className='mb-2' src={RatingImg} alt="" /></span>
                                 <p>Average Ratings</p>
-                                <p className='text-[40px] font-extrabold'>{ratingAvg}</p>
+                                <p className='md:text-3xl lg:text-[40px] font-extrabold'>{ratingAvg}</p>
                             </div>
                             <div>
                                 <span><img className='mb-2' src={ReviewImg} alt="" /></span>
                                 <p>Total Reviews</p>
-                                <p className='text-[40px] font-extrabold'>{reviews}</p>
+                                <p className='md:text-3xl lg:text-[40px] font-extrabold'>{reviews}</p>
                             </div>
 
                         </div>

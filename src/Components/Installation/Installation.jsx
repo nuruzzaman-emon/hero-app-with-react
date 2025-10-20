@@ -69,7 +69,7 @@ const Installation = () => {
             </div>
             <div className='mt-8 min-h-72'>
                 {showApp.map(app => {
-                    return <div key={app.id} className='max-w-6xl mx-auto flex justify-between items-center bg-white p-6 rounded-lg mb-2 '>
+                    return <div key={app.id} className='max-w-6xl mx-auto flex flex-col md:flex-row gap-5 justify-between items-center bg-white p-6 rounded-lg mb-2 '>
                         <div className='flex items-center gap-8'>
                             <img className='w-24 h-24' src={app.image} alt="" />
                             <div className=''>
