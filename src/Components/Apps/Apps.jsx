@@ -1,29 +1,34 @@
-import React, { useState } from 'react';
-import { useLoaderData, useNavigation } from 'react-router';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router';
 import App from '../App/App';
 import AppError from '../AppError/AppError';
+import { MagnifyingGlass, RotatingLines } from 'react-loader-spinner';
 
 const Apps = () => {
     const allApps = useLoaderData();
     const [searchItem, setSearchItem] = useState(allApps);
-    const navigation  = useNavigation();
-    const isNavigating = Boolean(navigation.location);
+    const [inputValue, setInputValue] = useState('')
+    const [loading, setLoading] = useState(false)
+
+    useEffect(() => {
+        if(!inputValue){ 
+            setSearchItem(allApps)
+            setLoading(false)
+            return;
+        }
+        setLoading(true);
+        const timeoutId = setTimeout(() =>{ 
+            const filteredApps = allApps.filter(app => app.title.trim().toLowerCase().includes(inputValue.trim().toLowerCase()))
+            setSearchItem(filteredApps);
+            setLoading(false)
+        },300)
+        return () => clearTimeout(timeoutId)
+    },[allApps, inputValue])
 
 
-
-    const handleSearchField = (event) => {
-        const inputValue = event.target.value;
-        // console.log(inputValue);
-
-        const filterApps = allApps.filter(app => app.title.toLowerCase().includes(inputValue.toLowerCase()));
-        setSearchItem(filterApps);
-
-
-    }
 
     return (
         <div className='w-10/12 mx-auto my-5'>
-            {isNavigating && <RotatingLines></RotatingLines>}
             <div>
                 <div className='text-center'>
                     <h2 className='text-4xl font-bold'>Our All Applications</h2>
@@ -45,17 +50,20 @@ const Apps = () => {
                                     <path d="m21 21-4.3-4.3"></path>
                                 </g>
                             </svg>
-                            <input type="search" onChange={handleSearchField} required placeholder="Search" />
+                            <input type="search" onChange={(e) => (setInputValue(e.target.value))} required placeholder="Search" />
                         </label>
                     </div>
                 </div>
             </div>
+            <div className='flex justify-center items-center'>
+                {loading && <MagnifyingGlass/>}
+            </div>
 
             {
                 searchItem.length === 0 ? <AppError></AppError> :
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4'>
-                    {searchItem.map(app => <App key={app.id} app={app}></App>)}
-                </div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4'>
+                        {searchItem.map(app => <App key={app.id} app={app}></App>)}
+                    </div>
             }
         </div>
     );

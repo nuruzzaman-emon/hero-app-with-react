@@ -7,7 +7,7 @@ import { RotatingLines } from 'react-loader-spinner';
 
 const Navbar = () => {
     const navigation  = useNavigation();
-    const isNavigating = Boolean(navigation.location)
+    const isNavigating = Boolean(navigation.location);
  
 
     return (

@@ -6,7 +6,7 @@ import { useLoaderData } from 'react-router';
 import { getFromLC } from '../../Utility/LocalStorage';
 
 const Installation = () => {
-    const [sorted, setSorted] = useState(false)
+    const [sorted, setSorted] = useState("")
     const allData = useLoaderData();
     const saveId = getFromLC();
     const installedApps = saveId.map(id => {
@@ -14,7 +14,7 @@ const Installation = () => {
     })
     const [showApp, setShowApp]= useState(installedApps)
 
-    // console.log(installedApps)
+    // console.log(showApp)
 
     const handleUninstallBtn = (id) => {
         const appData = getFromLC();
@@ -26,21 +26,44 @@ const Installation = () => {
         toast("App Uninstalled Successfully");
     }
 
+    const parseDownloads = (value) => { 
+        return Number(value.slice(0,-1))
+    }
+
+    
+
+    const handleSorted = (type) => { 
+        setSorted(type)
+        // console.log(sorted, type)
+        if(type === "high-low"){ 
+            const sortedByHighToLow = [...showApp].sort((a,b) => parseDownloads(b.downloads) - parseDownloads(a.downloads));
+            setShowApp(sortedByHighToLow)
+         }
+        if(type === "low-high"){ 
+            console.log("hii")
+            const sortedByLowToHigh  = [...showApp].sort((a,b) => parseDownloads(a.downloads) - parseDownloads(b.downloads));
+            setShowApp(sortedByLowToHigh)
+        }
+
+    }
+
+
+
 
 
     return (
         <div className='w-10/12 mx-auto '>
             <div className='py-16'>
-                <h2 className='text-5xl font-bold text-center'>Your Installed Apps</h2>
+                <h2 className='text-5xl font-bold text-center'>My Installed Apps</h2>
                 <p className='text-xl text-center mt-5'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='max-w-6xl mx-auto flex justify-between items-center my-5'>
                 <h2 className='text-2xl font-semibold'>{installedApps.length} Apps Found</h2>
                 <details className="dropdown">
-                    <summary className="btn m-1">sorted by</summary>
+                    <summary className="btn m-1">Sorted By Downloads : ({sorted?sorted:""})</summary>
                     <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><a>size</a></li>
-                        <li><a>downloads</a></li>
+                        <li><a onClick={()=>handleSorted("high-low")}>high-low</a></li>
+                        <li><a onClick={()=>handleSorted("low-high")}>low-high</a></li>
                     </ul>
                 </details>
             </div>
