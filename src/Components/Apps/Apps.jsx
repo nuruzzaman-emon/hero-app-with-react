@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigation } from 'react-router';
 import App from '../App/App';
 import AppError from '../AppError/AppError';
 
 const Apps = () => {
     const allApps = useLoaderData();
     const [searchItem, setSearchItem] = useState(allApps);
+    const navigation  = useNavigation();
+    const isNavigating = Boolean(navigation.location);
 
 
 
     const handleSearchField = (event) => {
         const inputValue = event.target.value;
-        console.log(inputValue);
+        // console.log(inputValue);
 
         const filterApps = allApps.filter(app => app.title.toLowerCase().includes(inputValue.toLowerCase()));
         setSearchItem(filterApps);
@@ -21,6 +23,7 @@ const Apps = () => {
 
     return (
         <div className='w-10/12 mx-auto my-5'>
+            {isNavigating && <RotatingLines></RotatingLines>}
             <div>
                 <div className='text-center'>
                     <h2 className='text-4xl font-bold'>Our All Applications</h2>
@@ -54,9 +57,6 @@ const Apps = () => {
                     {searchItem.map(app => <App key={app.id} app={app}></App>)}
                 </div>
             }
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4'>
-
-            </div>
         </div>
     );
 };
