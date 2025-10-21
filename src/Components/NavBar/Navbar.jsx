@@ -24,7 +24,7 @@ const Navbar = () => {
                                 <NavLink to={"/installation"}><li>Installation</li></NavLink>
                             </ul>
                         </div>
-                    <a href='/' className="btn btn-ghost text-xm-3 text-xl md:text-2xl font-bold flex items-center gap-2"><img className='w-7 h-7 md:w-10 md:h-10' src={logoImg} alt="........" /> <span className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)]   bg-clip-text text-transparent">APP Media</span></a>
+                    <a href='/' className="btn btn-ghost text-xm-3 text-xl md:text-2xl font-bold flex items-center gap-2"><img className='w-7 h-7 md:w-10 md:h-10' src={logoImg} alt="........" /> <span className="bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)]   bg-clip-text text-transparent">APP HUB</span></a>
                 </div>
                 <div className="navbar-center  hidden md:flex">
                     <ul className="menu menu-horizontal px-1">
