@@ -12,7 +12,7 @@ App Hub is a modern web platform that serves as a centralized app store where us
 <br/>
 Technologies Used:<br/>
 <br/>
-Frontend: React.js, Tailwind CSS, React Router
-Data Management: Local JSON / API Integration
-Deployment: Netlify
-Utilities: React Loader Spinner, React Toastify, react Icons, Recharts
+Frontend: React.js, Tailwind CSS, React Router<br/>
+Data Management: Local JSON / API Integration<br/>
+Deployment: Netlify<br/>
+Utilities: React Loader Spinner, React Toastify, react Icons, Recharts<br/>
